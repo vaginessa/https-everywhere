@@ -19,7 +19,7 @@ HTTPSE_INSTALL_DIRECTORY=$PROFILE_DIRECTORY/extensions/https-everywhere@eff.org
 
 # Build the XPI to run all the validations in makexpi.sh, and to ensure that
 # we test what is actually getting built.
-./makexpi.sh
+./makexpi.sh --fast
 XPI_NAME="pkg/`ls -tr pkg/ | tail -1`"
 
 # Set up a skeleton profile and then install into it.
